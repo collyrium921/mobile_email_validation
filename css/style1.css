@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.onebanc-image {
+    display: block;
+}
+
+.logo {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    padding: 1% 10%;
+}
+
+.onebanc-logo {
+    width: 30%;
+}
+
+.onebanc-logo img {
+    width: 200px;
+    height: 60px;
+}
+
+.left-section {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.right-section {
+    width: 50%;
+    float: right;
+    position: relative;
+    display: block;
+}
+
+.left-section {
+    margin-left: -1000px;
+    transition: 1s;
+}
+
+.left-section-content {
+    padding-left: 20%;
+    padding-top: 3%;
+    padding-right: 12%;
+}
+
+.rewards img {
+    width: 90%;
+    height: 97px;
+    margin-top: 20px;
+}
+
+.firstname {
+    width: 40%;
+}
+
+.firstname input {
+    width: 100%;
+}
+
+.box .lastname {
+    position: absolute;
+    width: 40%;
+    left: 220px;
+    top: 153px;
+}
+
+.lastname input {
+    width: 90%;
+}
+
+.box {
+    margin-top: 30px;
+    /* box-shadow: 0px 0px 10px #3798f2; */
+    padding-left: 35px;
+    padding-top: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-right: 35px;
+    /* margin-right: 80px; */
+}
+
+.box input,
+.login input {
+    width: 90%;
+    /* box-sizing: border-box; */
+    /* box-shadow: none; */
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 19px 0 6px 0;
+    font-size: 15px;
+}
+
+.box div,
+.login div {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.box div label,
+.login div label {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    color: #999;
+    transition: 0.5s;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.box input:focus~label,
+.box input:valid~label,
+.login input:focus~label,
+.login input:valid~label {
+    top: 0px;
+    left: 0;
+    font-size: 14px;
+    color: #3798f2;
+}
+
+.terms,
+.terms-bottom {
+    font-size: 12px;
+    opacity: .6;
+    margin-top: 40px;
+}
+
+.terms {
+    display: block;
+}
+
+.terms-bottom {
+    display: none;
+}
+
+.box input:focus,
+.box input:valid,
+.login input:focus,
+.login input:valid {
+    border-bottom: 2px solid #3798f2;
+}
+
+.error {
+    display: none;
+    color: red;
+    font-size: 12px;
+    /* margin-bottom: 10px; */
+}
+
+#errorfield {
+    margin-left: 50px;
+}
+
+button {
+    /* width: 300px; */
+    width: 90%;
+    height: 40px;
+    /* margin-top: 5px; */
+    margin-top: 10px;
+    background-color: #3798f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    outline: 0;
+    /* margin-bottom: 3px; */
+}
+
+.login-text,
+.invitation-text {
+    padding-bottom: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: #3798f2;
+}
+
+.invited {
+    display: none;
+    margin-top: 100px;
+}
+
+.party-image img {
+    width: 40px;
+    height: 40px;
+    margin-left: 25%;
+}
+
+.login-form-content {
+    margin-top: 30px;
+}
+
+.otp-input input {
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #3798f2;
+}
+
+.right-section-content {
+    padding-left: 10%;
+    padding-top: 3%;
+}
+
+.right-section-content img {
+    width: 80%;
+    height: 500px;
+}
+
+.login-form {
+    border-radius: 20px;
+    padding-left: 35px;
+    margin-top: 85px;
+    border: 1px solid;
+    margin-right: 80px;
+}
+
+.back {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: -25px;
+    opacity: 0.6;
+}
+
+.cross {
+    width: 13px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 90%;
+    opacity: 0.6;
+}
+
+.description {
+    display: block;
+    font-size: 16px;
+}
+
+.otp-input {
+    padding-left: 30px;
+}
+
+.numberlabel {
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
+    padding-bottom: 7px;
+    display: none;
+}
+
+@media screen and (max-width: 1250px) {
+    .box div {
+        width: 90%;
+    }
+    .box .lastname {
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .box .lastname input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .left-section-content {
+        padding-right: 0;
+    }
+    .left-section-content h1 {
+        font-size: 20px;
+    }
+    .description {
+        display: none;
+    }
+    .right-section-content {
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .right-section-content img {
+        width: 100%;
+    }
+    .login-text {
+        font-size: 14px;
+    }
+    .rewards img {
+        width: 90%;
+        height: 85px;
+    }
+    .otp-input {
+        padding-left: 15px;
+    }
+    .otp-input input {
+        width: 22px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .onebanc-image {
+        display: none;
+    }
+    .logo {
+        display: block;
+        margin-left: 70%;
+    }
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+    .left-section-content,
+    .right-section-content {
+        width: 65%;
+    }
+    .left-section-content h1 {
+        margin-top: 0px;
+    }
+    .right-section-content img {
+        margin-left: 30%;
+        width: 100%;
+        height: 300px;
+    }
+    .get-invite-form {
+        margin-top: 0;
+    }
+    .description {
+        display: block;
+        font-size: 14px;
+    }
+    .rewards img {
+        width: 80%;
+        height: 65px;
+        margin-top: 5px;
+    }
+    .terms {
+        display: none;
+    }
+    .terms-bottom {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+}

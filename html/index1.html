@@ -1,0 +1,116 @@
+<!doctype html />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage</title>
+    <link rel="stylesheet" href="../css/style1.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <tag autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+    <div class="navbar">
+        <div class="onebanc-logo">
+            <img class="onebanc-image" src="../images/onebanclogo.png" />
+            <img class="logo" src="../images/logo.svg">
+        </div>
+    </div>
+    <div class="landing-page">
+        <div class="left-section">
+            <div class="left-section-content">
+                <h1>
+                    Get the Best Banking Experience!
+                </h1>
+                <p class="description">
+                    Get a current account, saving and budgeting tools, access to higher returns and an investment provider – all in one app.
+                </p>
+                <div class="get-invite-form" style="position: relative">
+                    <div class="rewards">
+                        <img src="../images/userrewards.png" />
+                    </div>
+                    <div class="box">
+                        <div class="firstname">
+                            <input type="text" class="errorname" name="" required="" maxlength="30" autocomplete="off" onkeydown="validateName(event, this)" onpaste="preventPasteDigits(event)" />
+                            <label>First Name</label>
+                            <span class="error" id="errorname">Please fill this field!</span>
+                        </div>
+                        <div class="lastname">
+                            <input type="text" class="errorlname" name="" required="" maxlength="30" autocomplete="off" style="width: 80%;" onkeydown="validateName(event, this)" onpaste="preventPasteDigits(event)" />
+                            <label>Last Name</label>
+                            <span class="error" id="errorlname">Please fill this field!</span>
+                        </div>
+                        <div>
+                            <span class="numberlabel">+91</span>
+                            <input id="invitemail" class="errornumber" maxlength="64" autocomplete="off" style="width: 80%" type="text" name="" required="" onkeyup="verifyNumberEmail(event, this)" onpaste="preventInvalidInput(event)">
+                            <label class="label">Mobile Number/Email</label>
+                            <span class="error" id="errornumber">Please fill this field!</span>
+                        </div>
+                        <div>
+                            <button onclick="displayThankyou()">Get Invite</button>
+                        </div>
+                        <div class="login-text">
+                            <pre style="font-family: 'Roboto', sans-serif;"><p>Already have an account?  <a href="#" onclick="displayLoginform()">Login</a></p></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="invited">
+                    <div class="party-image"><img src="../images/partyimage.png" /></div>
+                    <h3 style="color: #2bca4f;">Thank you! We will be live soon.</h3>
+                </div>
+                <div class="login-form" style="display: none;">
+                    <div>
+                        <img class="back" onclick="goBack()" style="display: none;" src="../images/left-arrow.svg" />
+                        <img class="cross" onclick="displayGetInvite()" src="../images/cross.svg" />
+                    </div>
+                    <div class="login-form-content">
+                        <div class="login">
+                            <div>
+                                <span class="numberlabel" style="position:absolute; top: 7px;">+91</span>
+                                <input id="password" type="text" name="" required="" autocomplete="off" style="margin-left: 35px; width: 75%;" onkeyup="verifyNumberEmail(event, this)" onpaste="preventInvalidInput(event)">
+                                <label class="label" style="margin-left: 35px;">Mobile Number/Email</label>
+                                <span class="error" id="errorfield">Please fill this field!</span>
+                            </div>
+                        </div>
+                        <div class="otp-input" style="display: none;" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                            <p style="color: #3798f2;">Enter Passcode</p>
+                            <input type="password" class="pass" placeholder="*" maxlength="1" onkeypress="preventCharacters(event)" />
+                            <input type="password" class="pass" placeholder="*" maxlength="1" onkeypress="preventCharacters(event)" />
+                            <input type="password" class="pass" placeholder="*" maxlength="1" onkeypress="preventCharacters(event)" />
+                            <input type="password" class="pass" placeholder="*" maxlength="1" onkeypress="preventCharacters(event)" />
+                            <p style="margin-left: 55%;"><a href="#" onmousedown="showPassword()" onmouseup="showPassword()">Show</a></p>
+                            <p style="margin-left: 12px; font-size: 14px; margin-top: 10px; color: #999;">Enter the 4-digit passcode <br> you have set in OneBanc app.</p>
+                        </div>
+                        <div>
+                            <button class="otp" style="margin: 20px 0;" onclick="verifyOtp()">Proceed</button>
+                        </div>
+                        <div class="invitation-text">
+                            <pre style="font-family: 'Roboto', sans-serif;"><p>Not a user?  <a href="#" onclick="displayGetInvite()">Get invite</a></p></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="terms">
+                    <p>
+                        Terms & Conditions | Privacy Policy<br> 2021 © OneBanc Technologies Pvt. Ltd.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="right-section-content">
+                <img src="../images/bankvector.jpg" />
+            </div>
+            <div class="terms-bottom">
+                <p>
+                    Terms & Conditions | Privacy Policy<br> 2021 © OneBanc Technologies Pvt. Ltd.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

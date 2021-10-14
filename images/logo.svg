@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82" height="70" viewBox="0 0 82 70">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5120" data-name="Rectangle 5120" width="82" height="70" transform="translate(144)" fill="none"/>
+    </clipPath>
+    <filter id="Path_13" x="5" y="-3" width="78" height="78" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.439"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7f7f7f"/>
+      <stop offset="0.616" stop-color="#d0d0d0"/>
+      <stop offset="1" stop-color="#7f7f7f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8f7025"/>
+      <stop offset="0.557" stop-color="#eec97e"/>
+      <stop offset="1" stop-color="#8e6f24"/>
+    </linearGradient>
+  </defs>
+  <g id="logo" transform="translate(-144)" clip-path="url(#clip-path)">
+    <g id="logo-2" data-name="logo" transform="translate(0 -704)">
+      <g id="Dashboard" transform="translate(2 -352)">
+        <g transform="matrix(1, 0, 0, 1, 142, 1056)" filter="url(#Path_13)">
+          <path id="Path_13-2" data-name="Path 13" d="M30,0A30,30,0,1,1,0,30,30,30,0,0,1,30,0Z" transform="translate(14 6)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="logo-3" data-name="logo" transform="translate(168 720)">
+        <g id="logo-4" data-name="logo" transform="translate(2 7)">
+          <path id="Path_391" data-name="Path 391" d="M58.834,6.943a10.236,10.236,0,0,0-3.4.584A10.439,10.439,0,0,0,51.6,10.04a10.514,10.514,0,0,1,2.512,5.166,5.166,5.166,0,1,1-.42,2.18h0a.254.254,0,0,0,0-.045v-.232a10.44,10.44,0,0,0-2.664-6.723l-.323-.268a.322.322,0,0,1,.032-.048l-.032-.036.433-.442h0a9.987,9.987,0,0,1,2.2-1.766V4.919C53.335.663,48.53.76,48.53.76V14.4l1.12,2.977-.93,1.644a10.272,10.272,0,0,0,10.113,8.492,6.462,6.462,0,0,0,.83-.036v.036a10.3,10.3,0,0,0-.83-20.569Z" transform="translate(-33.15 -0.759)" fill="url(#linear-gradient)"/>
+          <path id="Path_392" data-name="Path 392" d="M15.911,32.6a5.247,5.247,0,1,1,.52-2.286,5.325,5.325,0,0,1-.1.995,10.268,10.268,0,0,0,2.515,5.812,10.268,10.268,0,1,0-.459.484,10.9,10.9,0,0,1-2.48-5.005Z" transform="translate(-0.899 -13.814)" fill="url(#linear-gradient-2)"/>
+        </g>
+        <rect id="Rectangle_3" data-name="Rectangle 3" width="40" height="40" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
